@@ -28,5 +28,14 @@
             eyeColor: "blue",
         };
 
+        // Dot notation
         console.log(person.firstName + " is " + person.age + " years old.");
+        // Bracket notation
+        console.log(person["firstName"] + " is " + person["age"] + " years old.");
 
+    // Arrays are variables that can hold more than one value.
+        
+        let fruits = ["Apple", "Banana", "Mango"];
+        console.log(fruits[0]); // Apple
+
+    

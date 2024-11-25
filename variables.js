@@ -46,4 +46,12 @@
         }   
 
         console.log(myFunction(3, 4)); // 12
+
+    // Operators are used to perform operations on variables and values.    
+
+        let x = 5;
+        let y = 2;
+        console.log(x + y); // 7
+
+        
     

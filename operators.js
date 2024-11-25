@@ -26,13 +26,22 @@
         x %= 1; // Assigns the remainder of dividing x by 1 to x
         
     // Comparison Operators
-
-        let equal = 1 == 1;
-        console.log(equal); // true
-        let notEqual = 1 != 1;
-        console.log(notEqual); // false
         
-        let numGreaterThan = 2 > 1;
-        console.log(numGreaterThan); // true 
-        let numLessThan = 1 < 2;
-        console.log(numLessThan); // false
+        let numGreaterThan = 2 > 1; // true
+        let numLessThan = 1 < 2;    // true
+
+        let greaterThanOrEqual = 1 >= 1; // true
+        let lessThanOrEqual = 1 <= 1;    // true
+
+    // Equality Operators
+
+        // Truthy
+
+        let equal = 1 == 1; // true
+       
+        // Strict Equality
+        
+        let strictEqual = 1 === 1; // true
+        let notStrictEqual = 1 !== 1; // false
+
+

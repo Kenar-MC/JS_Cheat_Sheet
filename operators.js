@@ -1,7 +1,6 @@
 //Operators Cheat Sheet
 
     // Arithmetic Operators
-
         let addition = 1 + 1;
         let subtraction = 1 - 1;
         let multiplication = 1 * 1;
@@ -17,7 +16,6 @@
         --decrement;    // before the variable
 
     // Assignment Operators
-
         let x = 1; // Assigns the value 1 to x
         x += 1; // Adds 1 to x
         x -= 1; // Subtracts 1 from x
@@ -25,8 +23,7 @@
         x /= 1; // Divides x by 1
         x %= 1; // Assigns the remainder of dividing x by 1 to x
         
-    // Comparison Operators
-        
+    // Comparison Operators       
         let numGreaterThan = 2 > 1; // true
         let numLessThan = 1 < 2;    // true
 
@@ -36,12 +33,40 @@
     // Equality Operators
 
         // Truthy
-
         let equal = 1 == 1; // true
        
-        // Strict Equality
-        
+        // Strict Equality       
         let strictEqual = 1 === 1; // true
         let notStrictEqual = 1 !== 1; // false
 
+    // Ternary Operator
+        let age = 18;
+        let canVote = (age >= 18) ? "Yes" : "No"; // Yes
 
+        let points = 90;
+        let type = (points > 100) ? "Gold" : (points > 90) ? "Silver" : "Bronze"; // Silver
+
+    // Logical Operators
+        let andVariable = true && true; // true
+        let orVariable = true || false; // true
+        let notVariable = !true; // false
+        
+            // Ternary and Logical Operator Mix
+             let personAge = 18;
+             let hasCar = true;
+             let canDrive = personAge >= 16 && hasCar; // true
+
+        let a = null;
+        const result = a ?? "default value"; // "default value"
+        const result = (a !== null && a !== undefined) ? a : "default value"; // "default value"
+
+        const result = a || "default value"; // "default value"
+        const result = (a !== null && a !== undefined) ? a : "default value"; // "default value"
+    
+    // Logical Operators with Non-Boolean Values
+        false || `Hello`; // "Hello"
+        false || 1; // 1
+        false || null; // null
+        false || undefined; // undefined
+        false || NaN; // NaN
+        

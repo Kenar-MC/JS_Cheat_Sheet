@@ -66,6 +66,16 @@
     // Logical Operators with Non-Boolean Values
         false || `Hello`; // "Hello"
         false || 1; // 1
-        false || null; // null
-        false || undefined; // undefined
-        false || NaN; // NaN
+        
+        // Falsy values are short-circuited
+        false || 1 || 2; // 1
+        false || 0 || 2; // 2
+        false || undefined || 2; // 2
+        false || null || 2; // 2
+        false || "" || 2; // 2
+        
+        // Truthy values are short-circuited
+        true || 1; // true
+        true || `Hello`; // true
+        
+    

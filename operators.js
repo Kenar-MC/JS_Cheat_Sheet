@@ -57,11 +57,11 @@
              let canDrive = personAge >= 16 && hasCar; // true
 
         let a = null;
-        const result = a ?? "default value"; // "default value"
-        const result = (a !== null && a !== undefined) ? a : "default value"; // "default value"
+        const result1 = a ?? "default value"; // "default value"
+        const result2 = (a !== null && a !== undefined) ? a : "default value"; // "default value"
 
-        const result = a || "default value"; // "default value"
-        const result = (a !== null && a !== undefined) ? a : "default value"; // "default value"
+        const result3 = a || "default value"; // "default value"
+        const result4 = (a !== null && a !== undefined) ? a : "default value"; // "default value"
     
     // Logical Operators with Non-Boolean Values
         false || `Hello`; // "Hello"
@@ -69,4 +69,3 @@
         false || null; // null
         false || undefined; // undefined
         false || NaN; // NaN
-        

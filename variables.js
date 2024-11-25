@@ -38,14 +38,12 @@
         let fruits = ["Apple", "Banana", "Mango"];
         console.log(fruits[0]); // Apple
 
-    // Functions are blocks of code that can be reused.,
+    // Functions are blocks of code that can be reused.
 
-        function myFunction(p1, p2) 
+        function myFunction(p1, p2)
         {
             return p1 * p2;
         }   
-
-        console.log(myFunction(3, 4)); // 12
 
 
 

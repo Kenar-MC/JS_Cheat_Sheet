@@ -55,3 +55,38 @@
                 {
                     console.log(numbers[i]);
                 }
+
+    // While Loop
+
+                 let sum = 0;
+                 while (true)           // This loop will run if the condition is true
+                 {
+                     sum++;
+                     if (sum === 5)
+                     {
+                         break;
+                     }
+                 }
+
+    // Do While Loop
+
+                 let sum2 = 0;
+                    do                  // This loop will run at least once even if the condition is false  
+                    {
+                        sum2++;
+                    } while (sum2 < 5);
+
+    // For-in Loop
+
+                let person = 
+                {
+                    name: "John",
+                    age: 30,
+                    job: "Web Developer",
+                }
+
+                for (let key in person)
+                {
+                    console.log(key, person[key]);
+                }
+                

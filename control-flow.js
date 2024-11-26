@@ -1,14 +1,41 @@
 //Control Flow Cheat Sheet
 
     // Basic
-    let price = 100;
+    let price = 110;
     let money = 100;
 
-    const buy = price >= price ? "You can buy it!" : "You don't have enough money!";
+    const canBuy = money >= price;
 
-    if (buy)
+    // If Statement
+
+    Job = "Web Developer";
+
+    if (Job === "Web Developer")
     {
-        console.log(`You bought the item for $${price}.`);
+        console.log("I am a Web Developer");
+    }
+    else if (Job === "Designer")
+    {
+        console.log("I am a Designer");
+    }
+    else
+    {
+        console.log("I am a Student");
     }
 
+    // Switch Statement
+
+    Job2 = "Designer";
+
+    switch (Job2)
+    {
+        case "Web Developer":
+            console.log("I am a Web Developer");
+            break;
+        case "Designer":
+            console.log("I am a Designer");
+            break;
+        default:
+            console.log("I am a Student");
+    }
     

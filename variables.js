@@ -1,5 +1,5 @@
-// Variables Cheat Sheet
 
+// Variables Cheat Sheet
     // Variables are containers for storing data values.
 
         let stringExample = "Hello World!";

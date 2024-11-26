@@ -85,8 +85,7 @@
                     job: "Web Developer",
                 }
 
-                for (let key in person)
+                for (let key in person)     // Iterates over the keys of an object
                 {
-                    console.log(key, person[key]);
+                    console.log(key,":", person[key]);
                 }
-                

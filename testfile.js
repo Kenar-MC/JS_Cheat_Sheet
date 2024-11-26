@@ -1,9 +1,9 @@
+
 function test(a, b) {
     return a > b ? a : b;
 }
 
 console.log(test(5, 10));
-
 
 
 // ==============================================================================
@@ -19,10 +19,14 @@ function fizzbuzz (n)
 
 console.log(fizzbuzz(15));
 
+
 // ==============================================================================
 
 
 array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+takeEvenNumbers(array1);
+takeOddNumbers(array1);
 
 function takeEvenNumbers(arr)
 {
@@ -48,11 +52,3 @@ function takeOddNumbers(arr)
         }
     }
 }
-
-function takeNumbers(arr, callback)
-{
-    callback(arr);
-}
-
-takeNumbers(array1, takeEvenNumbers);
-takeNumbers(array1, takeOddNumbers);

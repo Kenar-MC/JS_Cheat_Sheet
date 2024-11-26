@@ -89,3 +89,11 @@
                 {
                     console.log(key,":", person[key]);
                 }
+
+    // For-of Loop
+                
+                let colors = ["Red", "Green", "Blue"];
+                for (let elements of colors)    // Iterates over the values of an array
+                {
+                    console.log(elements);
+                }

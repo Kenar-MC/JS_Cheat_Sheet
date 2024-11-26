@@ -1,8 +1,13 @@
-// function test(a, b) {
-//     return a > b ? a : b;
-// }
+function test(a, b) {
+    return a > b ? a : b;
+}
 
-// console.log(test(5, 10));
+console.log(test(5, 10));
+
+
+
+// ==============================================================================
+
 
 function fizzbuzz (n)
 {
@@ -13,3 +18,41 @@ function fizzbuzz (n)
 }
 
 console.log(fizzbuzz(15));
+
+// ==============================================================================
+
+
+array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+function takeEvenNumbers(arr)
+{
+    for ( let i = 0 ; i < arr.length ; i++ )
+    {
+       for (const number of arr)
+       {
+           if ( number % 2 == 0 )
+           {
+               console.log(number);
+           }
+       }
+    }
+}
+
+function takeOddNumbers(arr)
+{
+    for ( let i = 0 ; i < arr.length ; i++ )
+    {
+        if ( arr[i] % 2 != 0 )
+        {
+            console.log(arr[i]);
+        }
+    }
+}
+
+function takeNumbers(arr, callback)
+{
+    callback(arr);
+}
+
+takeNumbers(array1, takeEvenNumbers);
+takeNumbers(array1, takeOddNumbers);

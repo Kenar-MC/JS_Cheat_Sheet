@@ -2,19 +2,19 @@
 
     // Object Creation
 
-                let person = 
-                {
-                    name: "John",                   // Property / Key
-                    age: 30,
-                    city: "New York",
+                // let person = 
+                // {
+                //     name: "John",                   // Property / Key
+                //     age: 30,
+                //     city: "New York",
 
-                    eat : function() {              // Behaviour / Method
-                        console.log("Eating");
-                    },
-                    function() {
-                        console.log("Sleeping");
-                    }
-                };
+                //     eat : function() {              // Behaviour / Method
+                //         console.log("Eating");
+                //     },
+                //     function() {
+                //         console.log("Sleeping");
+                //     }
+                // };
     
                 let anotherPerson = 
                 {
@@ -22,13 +22,32 @@
                     age: 25,
                     city: "San Francisco",
 
-                    eat : function() {
+                    eat : function()
+                    {
                         console.log("Not Eating");
                     },
 
-                    function() {
+                    sleep() 
+                    {
+                        console.log("Sleeping");
+                    }
+                }
+
+                function person(name, age, city)
+                {
+                    this.name = name;   // or just name 
+                    this.age = age;     // or just age
+                    this.city = city;   // or just city
+                    eat = function()    // or just eat
+                    {
+                        console.log("Eating");
+                    }
+
+                    sleep() 
+                    {
                         console.log("Sleeping");
                     }
                 }
     
+                const person1 = new person("John", 30, "New York", "Eating", "Sleeping");
 

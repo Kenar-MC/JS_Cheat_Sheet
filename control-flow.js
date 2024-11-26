@@ -1,4 +1,4 @@
-//Control Flow Cheat Sheet
+// Control Flow Cheat Sheet
 
     // Basic
 
@@ -59,7 +59,7 @@
     // While Loop
 
                  let sum = 0;
-                 while (true)           // This loop will run if the condition is true
+                 while (true)                           // This loop will run if the condition is true
                  {
                      sum++;
                      if (sum === 5)
@@ -71,7 +71,7 @@
     // Do While Loop
 
                  let sum2 = 0;
-                    do                  // This loop will run at least once even if the condition is false  
+                    do                                 // This loop will run at least once even if the condition is false  
                     {
                         sum2++;
                     } while (sum2 < 5);
@@ -85,7 +85,7 @@
                     job: "Web Developer",
                 }
 
-                for (let key in person)     // Iterates over the keys of an object
+                for (let key in person)                // Iterates over the keys of an object
                 {
                     console.log(key,":", person[key]);
                 }
@@ -93,11 +93,18 @@
     // For-of Loop
                 
                 let colors = ["Red", "Green", "Blue"];
-                for (let elements of colors)    // Iterates over the values of an array
+                for (let elements of colors)          // Iterates over the values of an array
                 {
                     console.log(elements);
                 }
     
     // Break and Continue
                 
-    
+                for (let i = 0; i < 10; i++)
+                {
+                    if (i < 5)
+                    {
+                        continue;                    // Skips the current iteration
+                    }
+                    console.log(i);
+                }

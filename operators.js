@@ -1,4 +1,4 @@
-//Operators Cheat Sheet
+// Operators Cheat Sheet
 
     // Arithmetic Operators
 

@@ -49,5 +49,5 @@
                     }
                 }
     
-                const person1 = new person("Edgar", 19, "Oslo", "Skiing", "Sleeping");
+                const person1 = new person("Edgar", 19, "Oslo", "Eats", "Sleeps");
 

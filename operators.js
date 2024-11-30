@@ -89,3 +89,5 @@
                     true || `Hello`; // true
         
         // Bir şeyler ekleme
+
+        // sonra da çıkartma

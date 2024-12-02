@@ -11,44 +11,51 @@
                 //     eat : function() {              // Behaviour / Method
                 //         console.log("Eating");
                 //     },
-                //     function() {
-                //         console.log("Sleeping");
-                //     }
-                // };
-    
-                // let anotherPerson = 
-                // {
-                //     name: "Jane",
-                //     age: 25,
-                //     city: "San Francisco",
-
-                //     eat : function()
-                //     {
-                //         console.log("Not Eating");
-                //     },
-
-                //     sleep() 
-                //     {
+                //     sleep() {
                 //         console.log("Sleeping");
                 //     }
                 // }
 
+    // Factory Function
+
                 function person(name,age,city)  // Constructor Function
                 {
-                    this.name = name;   // or just name 
-                    this.age = age;     // or just age
-                    this.city = city;   // or just city
-                    eat = function()    // or just eat
-                    {
-                        console.log("Eating");
-                    }
-
-                    sleep()
-                    {
-                        console.log("Sleeping");
+                    return {
+                        name: name, // or just name
+                        age: age,   // or just age
+                        city: city, // or just city
+                        eat() 
+                        {
+                            console.log("Eating");
+                        },
+                        sleep()
+                        {
+                            console.log("Sleeping");
+                        }
                     }
                 }
     
-                const person1 = new person("Edgar", 19, "Oslo");
+                const person1 = person("Edgar", 19, "Oslo");
                 console.log(person1);
 
+    // Constructor Function
+
+                function Person(name, age, city) 
+                {
+                    this.name = name;       // this = {};
+                    this.age = age;
+                    this.city = city;
+                    this.eat = function() 
+                    {
+                        console.log("Eating");
+                    }
+                    this.sleep = function() 
+                    {
+                        console.log("Sleeping");
+                    }
+
+                    return this;           // return the value of this
+                }
+
+                const person2 = new Person("John", 30, "New York");
+                console.log(person2);

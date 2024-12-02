@@ -59,3 +59,17 @@
 
                 const person2 = new Person("John", 30, "New York");
                 console.log(person2);
+
+    // Value vs Reference
+
+                let x = 10;
+                let y = x;
+                x = 20;
+                console.log(x); // 20
+                console.log(y); // 10   // Primitive Data Types are copied by value
+
+                let a = { value: 10 };
+                let b = a;
+                a.value = 20;
+                console.log(a); // 20
+                console.log(b); // 20   // Reference Data Types are copied by reference

@@ -35,7 +35,7 @@
                     }
                 }
     
-                const person1 = person("Edgar", 19, "Oslo");
+                const person1 = person("Edgar", 19, "Oslo");    // Create an object with the factory function on one line
                 console.log(person1);
 
     // Constructor Function
@@ -73,3 +73,44 @@
                 a.value = 20;
                 console.log(a); // 20
                 console.log(b); // 20   // Reference Data Types are copied by reference
+
+    // Object Methods
+
+                let dog = 
+                {
+                    name: "Buddy",
+                    sound: "Woof",
+                    bark() 
+                    {
+                        console.log("BARK!!!");
+                    }
+                }
+             
+            // Object Enumeration
+
+                // Output is an array
+                console.log(Object.keys(dog));  // ["name", "sound", "bark"]
+                console.log(Object.values(dog)); // ["Buddy", "Woof", [Function: bark]]
+                console.log(Object.entries(dog)); // [["name", "Buddy"], ["sound", "Woof"], ["bark", [Function: bark]]]
+
+                // Output is a string as loop through the object
+                for (let key in dog) 
+                {
+                    console.log(key, dog[key]); // name Buddy, sound Woof, bark [Function: bark]
+                }
+
+                for (let entry of Object.entries(dog)) // ["name", "Buddy"], ["sound", "Woof"], ["bark", [Function: bark]]
+                {
+                    console.log(entry);
+                }
+
+                for (let value of Object.values(dog))  // Buddy, Woof, [Function: bark]
+                {
+                    console.log(value);
+                }
+
+            // Object Cloning
+
+                let original = { name: "John" };
+                let clone = Object.assign({}, original);
+                console.log(clone); // { name: "John" }

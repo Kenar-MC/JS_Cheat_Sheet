@@ -16,24 +16,24 @@
                 //     }
                 // };
     
-                let anotherPerson = 
-                {
-                    name: "Jane",
-                    age: 25,
-                    city: "San Francisco",
+                // let anotherPerson = 
+                // {
+                //     name: "Jane",
+                //     age: 25,
+                //     city: "San Francisco",
 
-                    eat : function()
-                    {
-                        console.log("Not Eating");
-                    },
+                //     eat : function()
+                //     {
+                //         console.log("Not Eating");
+                //     },
 
-                    sleep() 
-                    {
-                        console.log("Sleeping");
-                    }
-                }
+                //     sleep() 
+                //     {
+                //         console.log("Sleeping");
+                //     }
+                // }
 
-                function person(name, age, city)
+                function person(name,age,city)  // Constructor Function
                 {
                     this.name = name;   // or just name 
                     this.age = age;     // or just age
@@ -43,11 +43,12 @@
                         console.log("Eating");
                     }
 
-                    sleep() 
+                    sleep()
                     {
                         console.log("Sleeping");
                     }
                 }
     
-                const person1 = new person("Edgar", 19, "Oslo", "Eats", "Sleeps");
+                const person1 = new person("Edgar", 19, "Oslo");
+                console.log(person1);
 

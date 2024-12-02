@@ -88,4 +88,6 @@
                     true || 1; // true
                     true || `Hello`; // true
         
-        
+        // Bir şeyler ekleme
+
+        // sonra da çıkartma

@@ -134,13 +134,48 @@
 
             // String Objects
 
-                const name = "John";
+                const name = "John is my name";
                 console.log(typeof name); // string
 
-                const anotherName = new String("John");
+                const anotherName = new String("John is my name");
                 console.log(typeof anotherName); // object
 
-                console.log(name.length); // 4
-                console.log(name.toUpperCase()); // JOHN
-                console.log(name.toLowerCase()); // john
-                const doesInclude = name.includes("Jo"); // true
+                console.log(name.length); 
+                console.log(name.toUpperCase()); // JOHN IS MY NAME
+                console.log(name.toLowerCase()); // john is my name
+                console.log(name.indexOf("o")); // 1
+                console.log(name.includes("Jo"));   // true
+
+                console.log(name.lastIndexOf("o")); // 13
+                console.log(name.charAt(2));    // h
+                console.log(name.startsWith("J"));  // true
+                console.log(name.endsWith("e"));    // true
+                console.log(name.replace("John", "Drake")); // Drake is my name
+                console.log(name.split(" ")); // ["John", "is", "my", "name"]
+                console.log(name.trim()); // John is my name                             
+
+            // Template Literals
+
+                const name2 = "John";
+                const age = 30;
+                const city = "New York";
+
+                const details = `${name2}${age}${city}`;
+
+            // Date Objects
+
+                const today = new Date();
+                console.log(today); // Current date and time
+                console.log(today.toDateString()); // Sun Mar 07 2021
+                console.log(today.toTimeString()); // 12:00:00 GMT+0100 (Central European Standard Time)
+                console.log(today.toLocaleDateString()); // 07.03.2021
+                console.log(today.toLocaleTimeString()); // 12:00:00
+                console.log(today.getFullYear()); // 2021
+                console.log(today.getMonth()); // 2
+                console.log(today.getDate()); // 7
+                console.log(today.getHours()); // 12
+                console.log(today.getMinutes()); // 0
+                console.log(today.getSeconds()); // 0
+                console.log(today.getMilliseconds()); // 0
+                console.log(today.getDay()); // 0
+                console.log(today.getTime()); // 1615102800000

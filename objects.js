@@ -136,6 +136,11 @@
 
                 const name = "John";
                 console.log(typeof name); // string
-                
+
                 const anotherName = new String("John");
                 console.log(typeof anotherName); // object
+
+                console.log(name.length); // 4
+                console.log(name.toUpperCase()); // JOHN
+                console.log(name.toLowerCase()); // john
+                const doesInclude = name.includes("Jo"); // true

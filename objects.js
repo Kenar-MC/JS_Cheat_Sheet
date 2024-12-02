@@ -114,3 +114,28 @@
                 let original = { name: "John" };
                 let clone = Object.assign({}, original);
                 console.log(clone); // { name: "John" }
+
+                clone.name = "Doe";
+                console.log(original); // { name: "John" }
+                console.log(clone); // { name: "Doe" }
+
+            // Math Objects
+
+                Math.round(1.9); // 2
+                Math.floor(1.9); // 1
+                Math.ceil(1.1); // 2 
+                Math.max(1, 2, 3, 4, 5); // 5
+                Math.min(1, 2, 3, 4, 5); // 1
+                Math.pow(2, 3); // 8
+                Math.sqrt(16); // 4
+                Math.random(); // Random number between 0 and 1
+
+                const random = Math.floor(Math.random() * 10) + 1; // Random number between 1 and 10
+
+            // String Objects
+
+                const name = "John";
+                console.log(typeof name); // string
+                
+                const anotherName = new String("John");
+                console.log(typeof anotherName); // object

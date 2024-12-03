@@ -25,4 +25,4 @@
                     return employee.name === "Doe"; // {id: 2, name: "Doe"}
                 });
 
-                console.log(employees.findIndex(employee => employee.name === "Doe")); // 1
+                console.log(employees.find(employee => employee.name === "Doe")); // 1

@@ -42,8 +42,8 @@
 
                 numbers.join(", "); // "1, 1.5, 3, 4, 5" // Convert an array to a string
 
-                number.sort(); // [1, 1.5, 3, 4, 5] // Sort an array
-                number.reverse(); // [5, 4, 3, 1.5, 1] // Reverse an array
+                numbers.sort(); // [1, 1.5, 3, 4, 5] // Sort an array
+                numbers.reverse(); // [5, 4, 3, 1.5, 1] // Reverse an array
 
 
                 const exampleString = "Example for URL Slug";

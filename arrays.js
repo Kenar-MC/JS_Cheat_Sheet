@@ -1,14 +1,17 @@
 // Arrays Cheat Sheet
 
+
                 let numbers = [1, 2, 3, 4, 5]; // Array of numbers
                 console.log(numbers); // [1, 2, 3, 4, 5]
 
                 numbers.push(6); // Add to the end of the array // [1, 2, 3, 4, 5, 6]
                 numbers.unshift(0); // Add to the beginning of the array // [0, 1, 2, 3, 4, 5, 6]
                 numbers.splice(2, 0, 1.5); // Add to the middle of the array // [0, 1, 1.5, 2, 3, 4, 5, 6]
+
                 numbers.pop(); // Remove from the end of the array // [0, 1, 1.5, 2, 3, 4, 5]
                 numbers.shift(); // Remove from the beginning of the array // [1, 1.5, 2, 3, 4, 5]
                 numbers.splice(2, 1); // Remove from the middle of the array // [1, 1.5, 3, 4, 5]
+                
                 numbers.slice(1, 4); // [1.5, 3, 4] // Extract elements from an array
 
                 numbers.indexOf(3); // 4 // Find the index of an element

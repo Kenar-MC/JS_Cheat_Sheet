@@ -159,7 +159,6 @@
                 const name2 = "John";
                 const age = 30;
                 const city = "New York";
-
                 const details = `${name2}${age}${city}`;
 
             // Date Objects

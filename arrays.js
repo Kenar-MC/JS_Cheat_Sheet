@@ -20,9 +20,10 @@
                     {id: 3, name: "Smith"}
                 ]
 
-                employees.find(function(employee)
-                {
-                    return employee.name === "Doe"; // {id: 2, name: "Doe"}
-                });
+                console.log(employees.find(function(employee){return employee.name === "Doe"})) // {id: 2, name: "Doe"}
+               
 
-                console.log(employees.find(employee => employee.name === "Doe")); // 1
+                console.log(employees.find(employee => employee.name === "Doe")); // {id: 2, name: "Doe"}
+
+                
+                console.log(employees.findIndex(function(employee){return employee.name === "Doe"})) // 1

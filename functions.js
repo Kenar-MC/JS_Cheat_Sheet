@@ -157,3 +157,25 @@
 
                     const walk = person4.walk;
                     walk(); // undefined
+
+                    const person5 =             // Arrow functions do not rebind this
+                    {
+                          name: "John",
+                      //  let walk = () => console.log(this.name); 
+                    }
+
+                    console.log(person5.walk()); // undefined
+
+        // Bind
+
+                    function talk()
+                    {
+                        console.log(this.sound);
+                    }
+
+                    let animal = { sound: "Woof" };
+
+                    let talkFunction = talk.bind(animal);
+                    talkFunction(); // Woof
+
+                    

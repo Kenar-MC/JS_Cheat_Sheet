@@ -19,4 +19,5 @@ let teams = [
   let row3 = [8, 1, 6];
   let loshu = [row1, row2, row3];
 
-  console.log(teams);
+console.log(teams);
+console.log(loshu);
